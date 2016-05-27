@@ -1,0 +1,59 @@
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+}
+#container{
+	width:1000px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	background-color:#999;
+}
+
+#header{
+	height:60px;
+	text-align:center;
+}
+#content{
+	height:auto;
+	margin:20px;
+	
+}
+#footer{
+	height:100px;
+	width:1000px;
+	text-align:right;
+	line-height:80px;
+}
+h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+}
+h3{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+}
+p{
+	font:Verdana, Geneva, sans-serif;
+}
+a{text-decoration:none;
+color:#333;
+}
+a.hover{
+	color:#000;
+}
+#left{
+	height:auto;
+	width:700px;
+	float:left;
+}
+#right{
+	height:auto;
+	margin-left:4px;
+	width:270px;
+	float:right;
+}
+
+	
