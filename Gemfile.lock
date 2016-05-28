@@ -40,6 +40,11 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.0.0)
+    autoprefixer-rails (6.3.6.1)
+      execjs
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     bundle (0.0.1)
       bundler
@@ -203,6 +208,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   bundle
   byebug
   coffee-rails (~> 4.1.0)
@@ -229,4 +235,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.4
+   1.12.5
