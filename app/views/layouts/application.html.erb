@@ -27,7 +27,9 @@
     </header> -->
     <div class="container">
     <%= yield %>
-   </div> 
+   
    <%= render 'layouts/footer' %>
+   <%= debug(params) if Rails.env.environment? %>
+   </div> 
   </body>
 </html>
