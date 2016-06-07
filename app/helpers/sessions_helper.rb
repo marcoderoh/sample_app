@@ -10,6 +10,9 @@ def remember(user)
     cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
 end
+def current_user?(user)
+    user == current_user
+    end
 
 def current_user
      if (user_id = session[:user_id])
@@ -38,4 +41,6 @@ def log_out
 	session.delete(:user_id)
 	@current_user = nil
 end
+
+
 end
