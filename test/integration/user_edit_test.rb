@@ -39,7 +39,7 @@ class UserEditTest < ActionDispatch::IntegrationTest
     log_in_as(@user)
     assert_redirected_to edit_user_path(@user)
     name = "Foo Bar"
-    email "foo@bar.com"
+    email = "foo@bar.com"
     patch user_path(@user), user: { name: name,
                                     email: email,
                                     password: "foobar",

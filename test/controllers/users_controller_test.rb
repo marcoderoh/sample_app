@@ -54,10 +54,4 @@ test "should redirect edit when not logged in" do
      get users_new_url
      assert_response :success
  end
-
-  
-  
-
-  
-  
 end
