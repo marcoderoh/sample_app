@@ -5,11 +5,11 @@ class MicropostTest < ActiveSupport::TestCase
  	@user = users(:michael)
  	@micropost = @user.microposts.build(content: "Lorem ipsum")
  end
- def "should be valid" do
+ test "should be valid" do
     assert @micropost.valid? 
 
  end
- def "user id should be present" do 
+ test "user id should be present" do 
  	@micropost.user_id =nil
  	assert_not @micropost.valid?
  end

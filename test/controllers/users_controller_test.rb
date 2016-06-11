@@ -16,7 +16,7 @@ test "should redirect edit when not logged in" do
 
   end  
    test "should redirect update when not logged in" do 
-    patch :update, id: @user, user: {name: @user.name, email: @user.email}
+    patch :update, id: @user, user: { name: @user.name, email: @user.email }
     assert_not flash.empty?
     assert_redirected_to login_url
   end  
