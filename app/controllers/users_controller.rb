@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def show 
   	@user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
-  	#binding.pry
+  
   end
 
   def create 
@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   end
   
   def edit
-    # @user = User.find(params[:id])
+    
   end
   
   private

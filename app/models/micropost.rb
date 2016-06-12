@@ -7,7 +7,7 @@ class Micropost < ApplicationRecord
   validate :picture_size
 
   private
-  #validates the size of an uploaded pic
+ 
   def picture_size 
   	if picture.size > 5.megabytes
   		errors.add(:picture, "ayo your pic larger than 5mb")
