@@ -34,7 +34,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "h3", "Academic Background"
     assert_select "h3", "SKILLS AND INTEREST DEVELOPED"
     assert_select "h3", "HOBBIES"
-    # assert_select "p", "Coding"
     assert_select "h3", "REFEREES"
     assert_select "h4", "CLUBS AND SOCIETIES ATTENDED"
 
